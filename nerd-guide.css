@@ -1,0 +1,58 @@
+.content ul {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3; /* Standard syntax */
+
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px; /* Standard syntax */
+
+    list-style-type: none; /* Removes the default list style */
+    padding: 0; /* Removes the default padding */
+}
+
+.content li {
+    break-inside: avoid-column; /* Prevents items from being split across columns */
+    -webkit-column-break-inside: avoid; /* Chrome, Safari */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* Standard syntax */
+    margin-bottom: 10px; /* Adds space between items */
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Styles for check box and the expandable section */
+.muscle-group-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Use repeat(3, 1fr) for 3 columns */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.expandable-section > .muscle-group-container {
+    display: none; /* Initially hidden */
+}
+
+/* Simple styles for the expand button */
+.expand-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.expand-button:focus {
+    outline: none;
+}
