@@ -276,10 +276,5 @@ export const tutorials = [
         name: "Katana extension",
         type: [muscleGroups.triceps],
         video_url: "https://www.instagram.com/p/CtOM5IkskhZ/"
-    },
-    {
-        name: "Curl al cavo alto",
-        type: [muscleGroups.biceps],
-        video_url: ""
     }
 ]
